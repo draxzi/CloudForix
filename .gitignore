@@ -1,0 +1,50 @@
+# Root-level gitignore for the Cloud Forix repository
+# Delegates to cloud_forensic_tool/.gitignore for project-specific rules
+
+# ── Python cache ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# ── Secrets & Credentials (NEVER commit) ─────────────────────────
+credentials.json
+token.json
+*.key
+.env
+.env.*
+!.env.example
+*service_account*.json
+
+# ── Encryption Keys ───────────────────────────────────────────────
+keys/
+*.pem
+*.p12
+
+# ── Investigation Runtime Data ────────────────────────────────────
+evidence/
+logs/
+reports/
+blockchain/
+forensic.db
+temp/
+
+# ── Virtual environments ──────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── OS-generated ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Database ──────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3

@@ -1,0 +1,112 @@
+# ============================================================
+# Cloud Forix — .gitignore
+# Python + Forensic Tool
+# ============================================================
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ----- Virtual Environments -----
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ----- Secrets & Credentials (NEVER commit real values) -----
+credentials.json
+token.json
+*.key
+service_account*.json
+*_service_account.json
+.env.*
+!.env.example
+
+# ----- Encryption Keys -----
+keys/
+*.pem
+*.p12
+*.pfx
+*.cer
+
+# ----- Investigation Data (runtime-generated, may contain sensitive forensic data) -----
+evidence/
+logs/
+reports/
+blockchain/
+forensic.db
+temp/
+
+# ----- OS-generated -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ----- IDE / Editor -----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ----- Logs -----
+*.log
+*.out
+
+# ----- Database Files -----
+*.db
+*.sqlite
+*.sqlite3
+
+# ----- Jupyter -----
+.ipynb_checkpoints/
+
+# ----- Coverage -----
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ----- WebDriver (Selenium) -----
+chromedriver*
+geckodriver*
