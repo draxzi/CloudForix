@@ -15,6 +15,7 @@ cryptography>=40.0.0
 
 # ── System & Process Monitoring ──────────────────────────────────
 psutil>=5.9.0
+pywin32>=306        # Required for win32evtlog (unauthorized_access_detector.py)
 
 # ── Web Scraping (EMS Collector) ─────────────────────────────────
 selenium>=4.8.0
