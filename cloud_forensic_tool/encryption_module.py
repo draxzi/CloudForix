@@ -1,6 +1,7 @@
 from key_manager import load_key
 import os
 
+
 def encrypt_file(filepath):
     fernet = load_key()
 
@@ -16,9 +17,10 @@ def encrypt_file(filepath):
         f.write(encrypted)
 
     print("Evidence encrypted:", encrypted_path)
-   
-    def decrypt_file(encrypted_path):
-     fernet = load_key()
+
+
+def decrypt_file(encrypted_path):
+    fernet = load_key()
 
     with open(encrypted_path, "rb") as f:
         encrypted_data = f.read()

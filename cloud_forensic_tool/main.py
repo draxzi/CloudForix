@@ -70,7 +70,6 @@ def run_tool():
     mde_log = collect_mde_logs()
     dns_log = collect_dns_logs()
     log_files = [net_log, sys_log, ems_log, gdrive_log, onedrive_log, azure_log, mde_log, dns_log]
-    log_files.append(dns_log)
     # Step 4: Process evidence
     print("\nProcessing evidence...")
     for filepath in log_files:
@@ -126,7 +125,6 @@ def run_tool():
     print("Unauthorized access detection done")
 
     network_alerts = detect_suspicious_connections()
-    all_alerts.extend(network_alerts)
     print("Network attack detection done")
 
     all_alerts.extend(malware_alerts)
